@@ -10,7 +10,7 @@ const weather = (latitude , longitude , callback) => {
            callback("Unable to find location");
         }
         else{
-            callback(undefined,'It is '+ body.current.weather_descriptions[0] +' and the temperature is '+body.current.temperature+ ' degrees.')
+            callback(undefined,'It is '+ body.current.weather_descriptions[0] +' and the temperature is '+body.current.temperature+ ' degrees. But doesnt it feels like '+body.current.feelslike+'? :))')
         }
     })
 }
